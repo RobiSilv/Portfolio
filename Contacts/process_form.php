@@ -2,7 +2,7 @@
 // filepath: /c:/Users/Utilisateur/Desktop/Portfolio/Contacts/process_form.php
 
 // Informations de connexion à la base de données
-$servername = "50100";
+$servername = "10.56.8.64";
 $username = "silv0053"; // Remplacez par votre nom d'utilisateur MySQL
 $password = "zGhJjHT5Ms"; // Remplacez par votre mot de passe MySQL
 $dbname = "portfolio";

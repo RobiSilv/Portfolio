@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Contact</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="cv.html">Mon CV</a>
+        <a href="portfolio.html">Mon Portfolio</a>
+        <a href="contacts.html">Me contacter</a>
+      </nav>
+    </header>
+
+    <main class="fondcontacts">
+      <section class="wrap">
+        <h2>Pour renter en contact avec moi</h2>
+        <form action="https://formspree.io/f/votre-id" method="POST">
+          <div class="form-group">
+            <label for="nom">Ici votre NOM :</label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Ici votre MAIL :</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="sujet">Avec ceci le SUJET :</label>
+            <input type="text" id="sujet" name="sujet" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Et enfin votre MESSAGE :</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <div class="retour">
+      <a href="index.html">
+        Retour à l'accueil
+        <div class="back-arrow">
+          <img src="img/backarrow.png" />
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

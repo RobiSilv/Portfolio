@@ -1,0 +1,448 @@
+@font-face {
+  font-family: "LondrinaSolid";
+  src: local("LondrinaSolid-Regular.ttf"), url("fonts/LondrinaSolid-Regular.ttf");
+}
+
+header {
+  background: #bc6a6a;
+  color: #ffffff;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  text-align: center;
+  font-size: 2em;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+nav a:hover {
+  color: #ffffff5e;
+}
+
+body {
+  font-family: "LondrinaSolid";
+  margin: 0;
+  padding: 0;
+  background: url("img/fond.png");
+  background-position: center;
+  background-size: 50em;
+}
+
+.retour {
+  margin-left: 1em;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+
+.back-arrow img {
+  width: 70px;
+  height: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bienvenue div {
+  text-align: center;
+  font-size: 8em;
+}
+.bienvenue h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 5em;
+  font-style: italic;
+}
+.bienvenue h3 {
+  margin-top: -20px;
+  margin-bottom: 0.2em;
+  text-align: center;
+  font-size: 4em;
+  font-style: italic;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.content {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.clique {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+.clique img {
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+}
+
+.clique img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* CV */
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.photo img {
+  width: 500px;
+  margin: 3em;
+}
+
+.appeler {
+  text-align: left;
+  font-size: 2.5em;
+}
+
+.pdf {
+  margin-left: auto;
+  margin-top: -18em;
+  margin-right: 1em;
+}
+
+.pdf img {
+  width: 15em;
+}
+
+.pdf img:hover {
+  filter: drop-shadow(0 0 15px rgba(46, 73, 146, 0.7));
+  cursor: pointer;
+}
+
+.categorie {
+  text-align: center;
+  align-content: center;
+  font-size: 1.5em;
+}
+
+.categorie h1 {
+  font-size: 3em;
+  text-align: left;
+  margin-left: 5em;
+}
+
+.categorie h2 {
+  font-size: 1.7em;
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+.sigle {
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+
+.logologiciel img {
+  width: 4em;
+  margin: 1em;
+}
+
+.txtloisirs {
+  width: 35em;
+  justify-self: center;
+}
+
+.infos {
+  font-size: 1.5em;
+}
+
+#etudes {
+  background: url("img/etudes.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50em;
+}
+
+#experiences {
+  background: url("img/experiences.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35em;
+}
+
+#competences {
+  background: url("img/competences.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20em;
+}
+
+#loisirs {
+  background: url("img/loisirs.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12em;
+}
+
+#contacts {
+  background: url("img/contacts.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13em;
+}
+
+hr {
+  height: 3px;
+  background-color: #000;
+  border: none;
+  width: 1000px;
+  margin: 70px auto;
+}
+
+/* Portfolio */
+
+.titre {
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+.projet {
+  border: 2px solid #bdbcbc;
+  margin: 30px;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.projet h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+figcaption {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.cosmik {
+  display: flex;
+  align-items: center;
+  gap: 10em;
+  justify-content: center;
+}
+
+.logo img {
+  width: 400px;
+  height: auto;
+}
+
+.charte img {
+  width: 400px;
+  height: auto;
+  border: rgb(68, 141, 196) solid 0.4em;
+  border-radius: 1em;
+}
+
+.ps {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 7em;
+}
+
+.ps img {
+  width: 400px;
+  height: auto;
+  border: black solid;
+}
+
+.affiche img {
+  width: 350px;
+  height: auto;
+}
+
+.carte img {
+  width: 400px;
+  height: auto;
+}
+
+.fauxsite img {
+  width: 400px;
+  height: auto;
+  border: rgb(68, 141, 196) solid 0.4em;
+  border-radius: 1em;
+}
+
+.wordpress img {
+  border: black solid;
+  width: 450px;
+  height: auto;
+}
+
+.ux1 {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+.ux1 img {
+  width: 515px;
+  height: auto;
+}
+
+.ux2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+}
+
+.ux2 img {
+  width: 540px;
+  height: auto;
+}
+
+.wireframe img {
+  border: rgb(68, 141, 196) solid 0.4em;
+  border-radius: 1em;
+}
+
+.postfacebook img {
+  width: 700px;
+  height: auto;
+}
+
+.ancienport {
+  justify-self: center;
+}
+
+.ancienport img {
+  border: rgb(68, 141, 196) solid 0.4em;
+  border-radius: 1em;
+  width: 300px;
+  height: auto;
+}
+
+/* Contacts */
+
+.fondcontacts {
+  max-width: 1300px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: rgba(23, 80, 173, 0.39);
+  border-radius: 230px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+  width: 1000px;
+  justify-self: center;
+  font-size: 1.5em;
+}
+
+.wrap h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.contacts {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 2em;
+  width: 20em;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  margin-right: 6px;
+  margin-left: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  justify-self: center;
+  display: block;
+  width: 30%;
+  padding: 0.75rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: "LondrinaSolid";
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#email,
+#nom {
+  text-indent: 30px;
+  padding: 0.5em 0em 0.5em 0.5em;
+}
+
+#sujet {
+  padding: 0.5em 0em 0.5em 0.5em;
+}
+
+#nom {
+  background-image: url("img/iconnom.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  text-indent: 30px;
+  background-position: 0 center;
+  background-position-x: 3px;
+}
+
+#email {
+  background-image: url("img/iconmail.png");
+  background-repeat: no-repeat;
+  background-size: 28px;
+  text-indent: 30px;
+  background-position: 0 center;
+  background-position-x: 3px;
+}

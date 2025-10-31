@@ -446,3 +446,239 @@ button:hover {
   background-position: 0 center;
   background-position-x: 3px;
 }
+
+/* Ajouts pour rendre le site responsive */
+
+/* box-sizing global pour faciliter les calculs de largeur */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Images adaptatives par défaut */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Amélioration du nav pour petits écrans */
+nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+}
+
+/* Réduire padding des liens et rendre cliquable sur petits écrans */
+nav a {
+  padding: 0.4rem 1rem;
+  white-space: nowrap;
+}
+
+/* Ajustements généraux */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header-spacer {
+  /* classe utilitaire si besoin d'espace en haut */
+  height: 70px;
+}
+
+/* Responsive: tablettes / petits ordinateurs */
+@media (max-width: 1024px) {
+  nav {
+    font-size: 1.15em;
+  }
+
+  .bienvenue div {
+    font-size: 5rem; /* réduit depuis 8em */
+  }
+
+  .bienvenue h2 {
+    font-size: 2.4rem;
+  }
+
+  .bienvenue h3 {
+    font-size: 1.8rem;
+  }
+
+  .clique img {
+    width: 220px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .photo img {
+    width: 320px;
+    margin: 1.5rem;
+  }
+
+  .pdf {
+    margin-top: 0;
+    margin-left: 0.5rem;
+    order: 3;
+  }
+
+  .intro {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cosmik,
+  .ps,
+  .ux1,
+  .ux2,
+  .ancienport {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .charte img,
+  .fauxsite img,
+  .wordpress img,
+  .logo img,
+  .ux1 img,
+  .ux2 img {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .postfacebook img {
+    max-width: 100%;
+    width: 90%;
+  }
+
+  hr {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .fondcontacts {
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .wrap {
+    width: 100%;
+  }
+}
+
+/* Responsive: mobiles */
+@media (max-width: 480px) {
+  nav {
+    font-size: 1rem;
+    gap: 0;
+  }
+
+  nav a {
+    padding: 0.6rem 0.8rem;
+    flex: 1 1 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  header {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .bienvenue div {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .bienvenue h2 {
+    font-size: 1.4rem;
+  }
+
+  .bienvenue h3 {
+    font-size: 1.1rem;
+  }
+
+  .content {
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+
+  .clique {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .clique img {
+    width: 160px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .projet {
+    margin: 12px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .titre {
+    margin-left: 0.6em;
+    font-size: 1.15rem;
+  }
+
+  .retour {
+    margin-left: 0.6em;
+    justify-content: flex-start;
+  }
+
+  .back-arrow img {
+    width: 50px;
+    height: auto;
+  }
+
+  .fondcontacts {
+    border-radius: 1.2rem; /* moins arrondi pour mobile */
+    margin: 1.5rem;
+    padding: 1rem;
+  }
+
+  .wrap {
+    width: 100%;
+    padding: 0;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+
+  /* Réduire les espacements sur mobile pour garder le contenu visible */
+  .ps img,
+  .wordpress img,
+  .charte img,
+  .fauxsite img,
+  .logo img,
+  .ux1 img,
+  .ux2 img,
+  .ancienport img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .pdf img {
+    width: 9rem;
+  }
+}
+
+/* Optionnel : amélioration du fond sur petits écrans */
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center top;
+  }
+}

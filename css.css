@@ -163,6 +163,20 @@ a {
   font-style: italic;
 }
 
+.logologiciel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logologiciel div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
 .logologiciel img {
   width: 4em;
   margin: 1em;
@@ -447,23 +461,18 @@ button:hover {
   background-position-x: 3px;
 }
 
-/* Ajouts pour rendre le site responsive */
-
-/* box-sizing global pour faciliter les calculs de largeur */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Images adaptatives par défaut */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Amélioration du nav pour petits écrans */
 nav {
   display: flex;
   gap: 0.5rem;
@@ -473,13 +482,11 @@ nav {
   padding: 0.5rem 1rem;
 }
 
-/* Réduire padding des liens et rendre cliquable sur petits écrans */
 nav a {
   padding: 0.4rem 1rem;
   white-space: nowrap;
 }
 
-/* Ajustements généraux */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -487,18 +494,16 @@ nav a {
 }
 
 .header-spacer {
-  /* classe utilitaire si besoin d'espace en haut */
   height: 70px;
 }
 
-/* Responsive: tablettes / petits ordinateurs */
 @media (max-width: 1024px) {
   nav {
     font-size: 1.15em;
   }
 
   .bienvenue div {
-    font-size: 5rem; /* réduit depuis 8em */
+    font-size: 5rem;
   }
 
   .bienvenue h2 {
@@ -571,7 +576,6 @@ nav a {
   }
 }
 
-/* Responsive: mobiles */
 @media (max-width: 480px) {
   nav {
     font-size: 1rem;
@@ -642,7 +646,7 @@ nav a {
   }
 
   .fondcontacts {
-    border-radius: 1.2rem; /* moins arrondi pour mobile */
+    border-radius: 1.2rem;
     margin: 1.5rem;
     padding: 1rem;
   }
@@ -657,7 +661,6 @@ nav a {
     font-size: 1.05rem;
   }
 
-  /* Réduire les espacements sur mobile pour garder le contenu visible */
   .ps img,
   .wordpress img,
   .charte img,
@@ -675,7 +678,6 @@ nav a {
   }
 }
 
-/* Optionnel : amélioration du fond sur petits écrans */
 @media (max-width: 768px) {
   body {
     background-size: cover;

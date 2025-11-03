@@ -121,7 +121,7 @@ a {
 }
 
 .appeler {
-  text-align: left;
+  text-align: center;
   font-size: 2.5em;
 }
 
@@ -697,6 +697,19 @@ nav a {
   #etudes, #experiences, #competences, #loisirs, #contacts {
     background-size: contain; /* Adaptation de la taille du fond */
     padding: 1rem;
+  }
+
+  .appeler {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em; /* Réduction de la taille pour mobile */
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
   }
 }
 

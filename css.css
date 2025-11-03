@@ -676,6 +676,28 @@ nav a {
   .pdf img {
     width: 9rem;
   }
+
+  .categorie h1 {
+    font-size: 2em;  /* Réduction de la taille */
+    text-align: center; /* Centrage du texte */
+    margin-left: 0;  /* Suppression de la marge gauche fixe */
+    margin-right: 0; /* Suppression de la marge droite */
+  }
+
+  .categorie {
+    padding: 0 1rem; /* Ajout d'un padding horizontal */
+  }
+
+  .txtloisirs {
+    width: auto; /* Adaptation de la largeur au conteneur */
+    padding: 0 1rem; /* Ajout d'un padding horizontal */
+  }
+
+  /* Ajustement pour les sections avec background images */
+  #etudes, #experiences, #competences, #loisirs, #contacts {
+    background-size: contain; /* Adaptation de la taille du fond */
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
